@@ -15,15 +15,27 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             overflow: hidden;
             border-radius: 20px;
+            background-color: darkslategray;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
         }
         .card:hover {
             transform: scale(1.05); 
             box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
             z-index: 1; 
         }
+        .card .card-text {
+            padding: 15px;
+            color: lightgray
+        }
+        .h1 {
+            color: white;
+        }
+        .p {
+            color: white;
+        }
     </style>
   </head>
-  <body style="background-color: lightblue;">
+  <body style="background-color: midnightblue;">
     
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -50,21 +62,21 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="image/bg1.jpg" class="d-block w-100" height="400" alt="Background 1">
+                <img src="image/back1.jpg" class="d-block w-100" height="400" alt="Background 1">
                 <div class="carousel-caption" style="background:rgba(0, 0, 0, 0.6); border-radius: 10px; padding: 20px;">
                     <h5 style="color: white;">Umar Nahdi</h5>
                     <p style="color: white;">Terima kasih telah mengunjungi website saya!</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="image/bg2.jpg" class="d-block w-100" height="400" alt="Background 2">
+                <img src="image/back2.jpg" class="d-block w-100" height="400" alt="Background 2">
                 <div class="carousel-caption" style="background:rgba(0, 0, 0, 0.6); border-radius: 10px; padding: 20px;;">
                     <h5 style="color: white;">Umar Nahdi</h5>
                     <p style="color: white;">Terima kasih telah mengunjungi website saya!</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="image/bg3.jpg" class="d-block w-100" height="400" alt="Background 3">
+                <img src="image/back3.jpg" class="d-block w-100" height="400" alt="Background 3">
                 <div class="carousel-caption" style="background:rgba(0, 0, 0, 0.6); border-radius: 10px; padding: 20px;">
                     <h5 style="color: white;">Umar Nahdi</h5>
                     <p style="color: white;">Terima kasih telah mengunjungi website saya!</p>
@@ -88,17 +100,17 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h1>About</h1>
+                    <h1 class="h1">About</h1>
                 </div>
             </div>
                 <div class="row">
                     <div class="col">
-                        <p align="justify">Halo! Saya Umar Achmad Nahdi, seorang mahasiswa program studi Teknik Informatika di STMIK Widya Pratama. 
+                        <p class="p" align="justify">Halo! Saya Umar Achmad Nahdi, seorang mahasiswa program studi Teknik Informatika di STMIK Widya Pratama. 
                         Saya memiliki dedikasi yang tinggi terhadap dunia teknologi informasi, khususnya dalam memahami bagaimana sebuah sistem bekerja dari tingkat dasar hingga menjadi aplikasi yang utuh.
                         Fokus utama pengembangan diri saya mencakup pemahaman logika algoritma yang kuat, rekayasa perangkat lunak, serta perancangan antarmuka web yang terstruktur dan responsif.</p>
                     </div>
                     <div class="col">
-                        <p align="justify">Saat ini, saya aktif mendalami berbagai bahasa pemrograman dan teknologi, termasuk pemanfaatan Python untuk pemecahan masalah logis, manajemen basis data relasional menggunakan SQL, serta membangun fondasi website dengan HTML dan CSS. 
+                        <p class="p" align="justify">Saat ini, saya aktif mendalami berbagai bahasa pemrograman dan teknologi, termasuk pemanfaatan Python untuk pemecahan masalah logis, manajemen basis data relasional menggunakan SQL, serta membangun fondasi website dengan HTML dan CSS. 
                         Saya memiliki ketertarikan khusus dalam menganalisis sistem secara mendalam—mulai dari struktur data hingga topologi jaringan—dan selalu antusias untuk mengembangkan proyek-proyek digital yang tidak hanya fungsional, tetapi juga efisien.</p>
                     </div>
                 </div>
@@ -109,14 +121,14 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h1>Portofolio</h1><br/>
+                    <h1 class="h1">Portofolio</h1><br/>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <div class="card" style="width: 18rem;">
                         <img src="image/K1.jpg" class="card-img-top" alt="card image cap">
-                        <div style="background-color: aquamarine;" class="card-body">
+                        <div class="card-body">
                             <p align="justify" class="card-text">Sebuah laptop tipis tampak depan yang menampilkan wallpaper abstrak bernuansa merah muda dan ungu.</p>
                         </div>
                     </div>
@@ -124,7 +136,7 @@
                 <div class="col">
                     <div class="card" style="width: 18rem;">
                         <img src="image/K2.jpg" class="card-img-top" alt="card image cap">
-                        <div style="background-color: aquamarine;" class="card-body">
+                        <div class="card-body">
                             <p align="justify" class="card-text">Laptop yang diletakkan di atas meja kayu luar ruangan, dengan layar menampilkan pemandangan alam.</p>
                         </div>
                     </div>
@@ -132,7 +144,7 @@
                 <div class="col">
                     <div class="card" style="width: 18rem;">
                         <img src="image/K3.jpg" class="card-img-top" alt="card image cap">
-                        <div style="background-color: aquamarine;" class="card-body">
+                        <div class="card-body">
                             <p align="justify" class="card-text">Laptop ramping bernuansa perak dengan wallpaper abstrak khas Windows 11 di layarnya.</p>
                         </div>
                     </div>
@@ -140,7 +152,7 @@
                 <div class="col">
                     <div class="card" style="width: 18rem;">
                         <img src="image/K4.jpg" class="card-img-top" alt="card image cap">
-                        <div style="background-color: aquamarine;" class="card-body">
+                        <div class="card-body">
                             <p align="justify" class="card-text">Tampilan samping sebuah laptop modern di atas meja kayu dengan layar bergambar air terjun.</p>
                         </div>
                     </div>
@@ -148,7 +160,7 @@
                 <div class="col">
                     <div class="card" style="width: 18rem;">
                         <img src="image/K5.jpg" class="card-img-top" alt="card image cap">
-                        <div style="background-color: aquamarine;" class="card-body">
+                        <div class="card-body">
                             <p align="justify" class="card-text">Laptop tipis tampak depan yang menampilkan wallpaper aliran gelombang warna-warni cerah.</p>
                         </div>
                     </div>
@@ -156,7 +168,7 @@
                 <div class="col">
                     <div class="card" style="width: 18rem;">
                         <img src="image/K6.jpg" class="card-img-top" alt="card image cap">
-                        <div style="background-color: aquamarine;" class="card-body">
+                        <div class="card-body">
                             <p align="justify" class="card-text">Laptop bersasis gelap yang tampak kokoh dengan wallpaper abstrak beraksen hijau neon.</p>
                         </div>
                     </div>
@@ -164,7 +176,7 @@
                 <div class="col">
                     <div class="card" style="width: 18rem;">
                         <img src="image/K7.jpg" class="card-img-top" alt="card image cap">
-                        <div style="background-color: aquamarine;" class="card-body">
+                        <div class="card-body">
                             <p align="justify" class="card-text">Laptop super tipis dengan layar yang menampilkan desain grafis prisma atau kristal elegan.</p>
                         </div>
                     </div>
@@ -172,7 +184,7 @@
                 <div class="col">
                     <div class="card" style="width: 18rem;">
                         <img src="image/K8.jpg" class="card-img-top" alt="card image cap">
-                        <div style="background-color: aquamarine;" class="card-body">
+                        <div class="card-body">
                             <p align="justify" class="card-text">Laptop yang dilihat dari sudut miring, menampilkan wallpaper abstrak modern berwarna biru dan merah muda.</p>
                         </div>
                     </div>
@@ -180,7 +192,7 @@
                 <div class="col">
                     <div class="card" style="width: 18rem;">
                         <img src="image/M1.jpg" class="card-img-top" alt="card image cap">
-                        <div style="background-color: aquamarine;" class="card-body">
+                        <div class="card-body">
                             <p align="justify" class="card-text">Mouse nirkabel ringkas berdesain simetris dengan warna merah muda pastel yang lembut.</p>
                         </div>
                     </div>
@@ -188,7 +200,7 @@
                 <div class="col">
                     <div class="card" style="width: 18rem;">
                         <img src="image/M2.jpg" class="card-img-top" alt="card image cap">
-                        <div style="background-color: aquamarine;" class="card-body">
+                        <div class="card-body">
                             <p align="justify" class="card-text">Mouse nirkabel ergonomis berwarna biru keabu-abuan yang dilengkapi tombol tambahan di bagian samping.</p>
                         </div>
                     </div>
@@ -196,7 +208,7 @@
                 <div class="col">
                     <div class="card" style="width: 18rem;">
                         <img src="image/M3.jpg" class="card-img-top" alt="card image cap">
-                        <div style="background-color: aquamarine;" class="card-body">
+                        <div class="card-body">
                             <p align="justify" class="card-text">Mouse nirkabel abu-abu berdesain bulat simpel dan minimalis dengan logo "GO" di bagian bawah.</p>
                         </div>
                     </div>
@@ -204,7 +216,7 @@
                 <div class="col">
                     <div class="card" style="width: 18rem;">
                         <img src="image/M4.jpg" class="card-img-top" alt="card image cap">
-                        <div style="background-color: aquamarine;" class="card-body">
+                        <div class="card-body">
                             <p align="justify" class="card-text">Mouse nirkabel hitam berdesain ergonomis dengan tombol samping yang dirancang untuk kenyamanan genggaman.</p>
                         </div>
                     </div>
@@ -216,7 +228,7 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h1>Contact</h1><br/>
+                    <h1 class="h1">Contact</h1><br/>
                 </div>
             </div>
             <div class="row justify-content-center">
